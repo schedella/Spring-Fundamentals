@@ -1,0 +1,26 @@
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.chsk.repository.CustomerRepository;
+import com.chsk.repository.HibernateCustomerRepositoryImpl;
+import com.chsk.service.CustomerService;
+import com.chsk.service.CustomerServiceImpl;
+
+@Configuration
+@ComponentScan({"com.chsk"})
+public class AppConfig {
+	
+	/*@Bean(name="customerService")
+	public CustomerService getCustomerService(){
+		//CustomerServiceImpl serviceImpl = new CustomerServiceImpl(getCustomerRepository());
+		CustomerServiceImpl serviceImpl = new CustomerServiceImpl();
+		//serviceImpl.setCustomerRepository(getCustomerRepository());
+		return serviceImpl;
+	}*/
+	
+	/*@Bean(name="customerRepository")
+	public CustomerRepository getCustomerRepository(){
+		return new HibernateCustomerRepositoryImpl();
+	}*/
+}

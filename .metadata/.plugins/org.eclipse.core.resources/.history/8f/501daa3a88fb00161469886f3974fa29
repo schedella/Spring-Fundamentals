@@ -1,0 +1,5 @@
+package com.chsk.model;
+
+public class Customer {
+
+}

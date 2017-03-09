@@ -1,0 +1,16 @@
+package com.chsk.service;
+
+import java.util.List;
+
+import com.chsk.model.Customer;
+import com.chsk.repository.CustomerRepository;
+import com.chsk.repository.HibernateCustomerRepositoryImpl;
+
+public class CustomerServiceImpl {
+	
+	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
+	
+	public List<Customer> findAll(){
+		return customerRepository.findAll();
+	}
+}

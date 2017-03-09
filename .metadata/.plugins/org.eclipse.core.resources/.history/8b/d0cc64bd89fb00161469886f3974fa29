@@ -1,0 +1,5 @@
+package com.chsk.service;
+
+public interface CustomerService {
+
+}

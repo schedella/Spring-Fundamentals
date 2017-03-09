@@ -1,0 +1,23 @@
+package com.chsk.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.chsk.model.Customer;
+import com.chsk.repository.CustomerRepository;
+import com.chsk.repository.HibernateCustomerRepositoryImpl;
+
+@Service("customerService")
+public class CustomerServiceImpl implements CustomerService {
+	
+	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
+	
+	/* (non-Javadoc)
+	 * @see com.chsk.service.CustomerService#findAll()
+	 */
+	@Override
+	public List<Customer> findAll(){
+		return customerRepository.findAll();
+	}
+}

@@ -1,0 +1,9 @@
+package com.chsk.repository;
+
+public class HibernateCustomerRepositoryImpl {
+	
+	public List<Customer> findAll(){
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.chsk.service;
+
+import com.chsk.repository.CustomerRepository;
+import com.chsk.repository.HibernateCustomerRepositoryImpl;
+
+public class CustomerServiceImpl {
+	
+	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
+
+}
